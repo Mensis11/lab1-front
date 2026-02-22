@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Завдання 1</title>
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+        <a style="display: block; text-align: right;" href="../../index.html">На головну дисципліни</a>
+        <div class="container">
+            <img src="../images/clothes.png" usemap="#clothes" width="400" height="700">
+            <svg class="overlay" width="400" height="700">
+                <rect x="130" y="160" width="135" height="445"
+                    fill="red" opacity="0.3"/>
+                <circle cx="220" cy="67" r="60"
+                        fill="blue" opacity="0.3"/>
+                <polygon points="264,409 265,575 400,574"
+                        fill="green" opacity="0.3"/>
+            </svg>
+        </div>
+
+        <map name="clothes">
+            <area shape="rect"
+                coords="130,160,265,605"
+                href="https://uk.wikipedia.org/wiki/Сукня"
+                target="_blank"
+                alt="Сукня">
+            <area shape="circle"
+                coords="220,67,60"
+                href="https://uk.wikipedia.org/wiki/Капелюх"
+                target="_blank"
+                alt="Капелюх">
+            <area shape="poly"
+                coords="264,409 265,575 400,574"
+                href="https://uk.wikipedia.org/wiki/Сумка"
+                target="_blank"
+                alt="Сумка">
+        </map>
+    </body>
+</html>
