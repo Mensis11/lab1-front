@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Z-index</title>
+    <style>
+        body { 
+            font-family: Arial;
+        }
+
+        .section { 
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            height: 180px;
+            position: relative;
+        }
+
+        .box { 
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 30px;
+        }
+
+        .title {
+            text-align: end;
+        }
+
+        .red { 
+            background: lightcoral;
+            left: 40px;
+        }
+
+        .blue { 
+            background: lightskyblue;
+            left: 80px;
+        }
+
+        .green { 
+            background: lightgreen;
+            left: 120px;
+        }
+
+        .auto { 
+            z-index: auto;
+        }
+
+        .z1 { 
+            z-index: 1;
+        }
+
+        .z2 { 
+            z-index: 2;
+        }
+
+        .zminus { 
+            z-index: -1;
+        }
+
+        .initial { 
+            z-index: initial;
+        }
+
+        .inherit-parent { 
+            z-index: 5;
+        }
+
+        .inherit { 
+            z-index: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h3 class="title">z-index: auto</h3>
+
+        <div class="box red auto"></div>
+        <div class="box blue auto"></div>
+        <div class="box green auto"></div>
+    </div>
+
+    <div class="section">
+        <h3 class="title">z-index: number</h3>
+
+        <div class="box red z1"></div>
+        <div class="box blue z2"></div>
+        <div class="box green zminus"></div>
+    </div>
+
+    <div class="section">
+        <h3 class="title">z-index: initial</h3>
+
+        <div class="box red initial"></div>
+        <div class="box blue initial"></div>
+    </div>
+
+    <div class="section inherit-parent">
+        <h3 class="title">z-index: inherit</h3>
+
+        <div class="box red inherit"></div>
+        <div class="box blue inherit"></div>
+    </div>
+</body>
+</html>

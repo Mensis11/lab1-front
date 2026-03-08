@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Clear</title>
+        <style>
+            body {
+                font-family: Arial;
+            }
+
+            .section {
+                border: 2px solid black;
+                margin: 20px;
+                padding: 10px;
+            }
+
+            .box {
+                width: 120px;
+                height: 80px;
+                background: lightblue;
+                float: left;
+                margin: 5px;
+            }
+
+            .clearbox {
+                background: lightcoral;
+                padding: 10px;
+                margin-top: 10px;
+            }
+
+            .none { clear: none; }
+
+            .left { clear: left; }
+
+            .right { clear: right; }
+
+            .both { clear: both; }
+
+            .initial { clear: initial; }
+
+            .inherit-parent { clear: left; }
+
+            .inherit { clear: inherit; }
+
+            .reset {
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="section">
+            <h3>clear: none</h3>
+
+            <div class="box"></div>
+            <div class="box"></div>
+
+            <div class="clearbox none">
+                text here
+            </div>
+
+            <div class="reset"></div>
+        </div>
+
+        <div class="section">
+            <h3>clear: left</h3>
+
+            <div class="box"></div>
+            <div class="box"></div>
+
+            <div class="clearbox left">
+                text here
+            </div>
+
+            <div class="reset"></div>
+        </div>
+
+        <div class="section">
+            <h3>clear: right</h3>
+
+            <div class="box" style="float:right"></div>
+
+            <div class="clearbox right">
+                text here
+            </div>
+
+            <div class="reset"></div>
+        </div>
+
+        <div class="section">
+            <h3>clear: both</h3>
+
+            <div class="box"></div>
+            <div class="box" style="float:right"></div>
+
+            <div class="clearbox both">
+                text here
+            </div>
+
+            <div class="reset"></div>
+        </div>
+
+        <div class="section">
+            <h3>clear: initial</h3>
+
+            <div class="box"></div>
+
+            <div class="clearbox initial">
+                text here
+            </div>
+
+            <div class="reset"></div>
+        </div>
+
+        <div class="section inherit-parent">
+            <h3>clear: inherit</h3>
+
+            <div class="box"></div>
+
+            <div class="clearbox inherit">
+                text here
+            </div>
+
+            <div class="reset"></div>
+        </div>
+    </body>
+</html>

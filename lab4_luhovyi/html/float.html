@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Float</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .section {
+            border: 2px solid black;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .box {
+            width: 120px;
+            height: 80px;
+            background:lightblue;
+            margin: 10px;
+        }
+
+        .none {
+            float: none; 
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .initial {
+            float: initial;
+        }
+
+        .inherit-parent {
+            float: left;
+        }
+
+        .inherit {
+            float: inherit;
+        }
+
+        .inline-start {
+            float: inline-start;
+        }
+
+        .inline-end {
+            float: inline-end;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h3>float: none</h3>
+        <div class="box none"></div>
+        <p>text here</p>
+        <div class="clear"></div>
+    </div>
+
+    <div class="section">
+        <h3>float: left</h3>
+        <div class="box left"></div>
+        <p>text here</p>
+        <div class="clear"></div>
+    </div>
+
+    <div class="section">
+        <h3>float: right</h3>
+        <div class="box right"></div>
+        <p>text here</p>
+        <div class="clear"></div>
+    </div>
+
+    <div class="section">
+        <h3>float: initial</h3>
+        <div class="box initial"></div>
+        <p>text here</p>
+        <div class="clear"></div>
+    </div>
+
+    <div class="section inherit-parent">
+        <h3>float: inherit</h3>
+        <div class="box inherit"></div>
+        <p>text here</p>
+        <div class="clear"></div>
+    </div>
+
+    <div class="section">
+        <h3>float: inline-start</h3>
+        <div class="box inline-start"></div>
+        <p>text here</p>
+        <div class="clear"></div>
+    </div>
+
+    <div class="section">
+        <h3>float: inline-end</h3>
+        <div class="box inline-end"></div>
+        <p>text here</p>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

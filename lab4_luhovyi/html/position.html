@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+            height: 2000px;
+        }
+
+        .container-general {
+            display: flex;
+            column-gap: 10px;
+        }
+
+        .container {
+            width: 200px;
+            height: 200px;
+        }
+
+        .container-relative {
+            background-color: lightcoral;
+
+            position: relative;
+        }
+
+        .discount {
+            position: absolute;
+            top: 10%;
+            right: 20%;
+
+            background-color: lightgreen;
+            padding: 10px 20px;
+        }
+
+        .container-static {
+            background-color: lightsalmon;
+
+            position: static;
+        }
+
+        .container-static p {
+            background-color: lightseagreen;
+
+            position: inherit;
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+            background-color: lightcyan;
+
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-general">
+        <div class="container container-relative">
+            <span class="discount">-30%</span>
+        </div>
+
+        <div class="container container-static">
+            <p>Inherit text</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>footer element</p>
+    </footer>
+</body>
+</html>
