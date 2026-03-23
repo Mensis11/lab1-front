@@ -9,17 +9,14 @@
     height: 100vh;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    height: 15%;
-}
-
 .header,
 .footer {
+    display: flex;
+    align-items: center;
     background-color: gold;
     padding: 10px;
     border: 2px solid black;
+    height: 15%;
 }
 
 .small-box {
@@ -57,21 +54,21 @@
 
 .center {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 
     width: 30%;
     height: 90%;
     font-size: 16px;
     border: 2px solid rgb(182, 182, 182);
+    overflow-x: auto;
 }
 
 .inner {
-    align-self: end;
     width: 100%;
     background-color: red;
     height: 40px;
     border: 2px solid black;
+    flex-shrink: 0;
 }
 
 .rotate {
