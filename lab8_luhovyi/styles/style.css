@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100vh;
+}
+
+.header,
+.footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    height: 25%;
+}
+
+.small-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 250px;
+    height: 60px;
+    background-color: white;
+    font-weight: 700;
+}
+
+.middle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+.side, .side-two {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.side-two,
+.center {
+    height: 90%;
+    align-self: center;
+}
+
+.center {
+    display: grid;
+
+    border: 2px solid #ccc;
+}
+
+.scroll-box {
+    overflow-y: scroll;
+    padding: 15px;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    background-color: #FF4500;
+    border: 2px solid black;
+    color: white;
+    font-weight: 700;
+}
+
+.image-placeholder {
+    width: 300px;
+    height: 300px;
+    margin-block: 10px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .middle {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        display: grid;
+        justify-content: center;
+    }
+
+    .side, .side-two, .center {
+        height: auto;
+    }
+
+    .scroll-box {
+        max-height: 300px;
+    }
+}
+
+@media print {
+    .container {
+        display: block !important;
+        height: auto !important;
+    }
+
+    .middle {
+        display: block !important;
+        height: auto !important;
+    }
+
+    .header, .footer {
+        background-color: #eee !important;
+        color: black !important;
+        border: 1px solid black;
+        height: auto !important;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .side, .side-two, .center {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 20px;
+        transform: none !important;
+        position: static !important;
+        border: 1px solid #ccc;
+    }
+
+    .scroll-box {
+        overflow: visible !important;
+        max-height: none !important;
+    }
+
+    .nav-link, .inner {
+        display: none !important;
+    }
+
+    body {
+        background-color: white !important;
+        color: black !important;
+        font-size: 12pt;
+    }
+}
