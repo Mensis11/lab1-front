@@ -12,14 +12,14 @@
 .header,
 .footer {
     background-color: black;
-    display: flex;
+    display: grid;
     align-items: center;
     padding-inline: 20px;
     height: 25%;
 }
 
 .small-box {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
 
@@ -63,7 +63,7 @@
 }
 
 .inner {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
 
