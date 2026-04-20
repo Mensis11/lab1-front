@@ -39,7 +39,7 @@ body {
 }
 
 .middle {
-    height: calc(100vh - 300px); 
+    height: calc(100vh - 200px); 
     display: flex;
     justify-content: space-between;
     column-gap: 20px;
@@ -104,8 +104,6 @@ body {
 }
 
 .image-placeholder {
-    width: 300px;
-    height: 300px;
     margin-block: 10px;
 }
 
