@@ -1,0 +1,20 @@
+section {
+    padding-block: 50px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("../img/left-arrow.png");
+}
+
+.carousel-control-next-icon {
+    background-image: url("../img/left-arrow.png");
+    rotate: 180deg;
+}
+
+.carousel-control-prev {
+    left: -150px;
+}
+
+.carousel-control-next {
+    right: -150px;
+}
