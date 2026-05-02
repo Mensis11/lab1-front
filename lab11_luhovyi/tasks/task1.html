@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Завдання 1</title>
+</head>
+<body>    
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Текстові поля та типи</legend>
+            <div class="form-group">
+                <label for="username">Однорядкове поле:</label>
+                <input type="text" id="username" name="username" placeholder="Введіть ім'я" required maxlength="20">
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Багаторядкова область:</label>
+                <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Розкажіть про себе"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" name="pass" required>
+
+                <label>Email:</label>
+                <input type="email" name="user_email" placeholder="example@mail.com">
+
+                <label>Range:</label>
+                <input type="range" name="level" min="0" max="100" step="5">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Вибір та списки</legend>
+            <p>Виберіть стать:</p>
+            <input type="radio" id="m" name="gender" value="male" checked>
+            <label for="m" style="display:inline">Чоловік</label>
+
+            <input type="radio" id="f" name="gender" value="female">
+            <label for="f" style="display:inline">Жінка</label>
+
+            <p>Ваші хобі:</p>
+            <input type="checkbox" id="c1" name="hobby" value="sport">
+            <label for="c1" style="display:inline">Спорт</label>
+
+            <input type="checkbox" id="c2" name="hobby" value="music">
+            <label for="c2" style="display:inline">Музика</label>
+
+            <input type="checkbox" id="c3" name="hobby" value="travel">
+            <label for="c3" style="display:inline">Подорожі</label>
+
+            <div class="form-group" style="margin-top:15px">
+                <label>Місто:</label>
+                <select name="city">
+                    <optgroup label="Україна">
+                        <option value="kyiv">Київ</option>
+                        <option value="lviv">Львів</option>
+                    </optgroup>
+                    <optgroup label="ЄС">
+                        <option value="warsaw">Варшава</option>
+                        <option value="berlin">Берлін</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Мови програмування:</label>
+                <select name="langs" multiple size="3">
+                    <option value="js">JavaScript</option>
+                    <option value="py">Python</option>
+                    <option value="cpp">C++</option>
+                    <option value="php">PHP</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Відправити дані">
+        <input type="reset" value="Очистити форму">
+        <input type="button" value="Click me!" onClick='alert("Oh, you have been clicked me!!!")'>
+    </form>
+</body>
+</html>

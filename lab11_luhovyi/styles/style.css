@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+fieldset {
+    padding: 15px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+legend {
+    font-weight: 700;
+    padding-inline: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.intro-text::first-line {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.intro-text::first-letter {
+    font-size: 48px;
+    margin-right: 8px;
+    color: #e74c3c;
+}
+
+.decorated-box::before {
+    content: "ПРИМІТКА: ";
+    color: blue;
+    font-weight: bold;
+}
+
+.decorated-box::after {
+    content: "[Кінець тексту]";
+    font-style: italic;
+    color: gray;
+}
+
+.nav-link:link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.nav-link:visited {
+    color: #2f9e6a;
+}
+
+.nav-link:hover {
+    color: #e5ca44;
+    text-decoration: underline;
+}
+
+.nav-link:active {
+    color: #ff0000;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:enabled {
+    background-color: #fff;
+}
+
+input:disabled {
+    background-color: #e9e9e9;
+}
+
+p:nth-last-of-type(2) {
+    background-color: #fff3cd;
+    padding-block: 5px;
+}
+
+#section-target:target {
+    background-color: #d4edda;
+    padding: 10px;
+}
